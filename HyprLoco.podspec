@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'HyprLoco'
-  s.version          = '0.0.10'
+  s.version          = '0.0.11'
   s.summary          = 'Integrate HyprLoco NORM location services into your app.'
 
   s.description      = <<-DESC
@@ -21,8 +21,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'AudioToolbox', 'AVFoundation', 'CoreGraphics', 'CoreLocation', 'CoreMotion', 'Foundation', 'MapKit', 'QuartzCore', 'SystemConfiguration', 'UIKit', 'CoreData', 'Foundation'
   s.vendored_framework = 'HyprLoco.framework'
   s.source_files = 'HyprLoco.framework/**/*.h'
-# s.resources = 'Resources/BDDataModel.momd'
-  s.resource_bundle = { 'BDDataModel' => 'Resources/**/*.*' }
+  s.resource_bundle = { 'BDDataModel' => 'Resources/*.*' }
   s.requires_arc = true
   s.preserve_paths  = 'HyprLoco.framework', 'BDDataModel.bundle'
   s.xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -ObjC', 'ENABLE_BITCODE' => 'NO' }
