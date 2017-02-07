@@ -2,6 +2,16 @@
 #import <UIKit/UIKit.h>
 #endif
 
+#import "HLAzureManager.h"
+#import "HLBluedotManager.h"
+#import "HLCommunicationsManager.h"
+#import "HLCustomer-Private.h"
+#import "HLCustomer.h"
+#import "HLDataManager.h"
+#import "HLLocation.h"
+#import "HLLogManager.h"
+#import "HLModelObject.h"
+#import "HLOrder.h"
 #import "HyprLoco.h"
 
 FOUNDATION_EXPORT double HyprLocoVersionNumber;
