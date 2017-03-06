@@ -12,6 +12,8 @@
 #import "HLCustomer.h"
 #import "HLOrder.h"
 
+@protocol HyprLocoDelegate;
+
 
 /**
  The version of the framework.
@@ -76,6 +78,11 @@ typedef NS_ENUM(NSInteger, HLServer) {
  You can either create and retain your own instance of the HyprLoco class, or you can use the lazily loaded `+[HyprLoco sharedInstance]` singleton.
  */
 @interface HyprLoco : NSObject
+
+/**
+ A delegate to be notified when location events occor.
+ */
+@property (nonatomic, weak) id<HyprLocoDelegate> delegate;
 
 /**
  The OIS server to use.
@@ -185,5 +192,16 @@ typedef NS_ENUM(NSInteger, HLServer) {
  @param identifier The customer identifier.
  */
 - (void)acknowledgeSurveyNotificationWithCustomerIdentifier:(NSString * _Nonnull)identifier;
+
+@end
+
+
+/**
+ The delegate of a HyprLoco object must adopt the HyprLocoDelegate protocol. The optional method of the protocol allow the delegate to know when predefined boundries have been crossed.
+ */
+@protocol HyprLocoDelegate <NSObject>
+
+@optional
+- (void)hyprLoco:(HyprLoco *)sender zoneDidChange:(NSString *)zoneName;
 
 @end

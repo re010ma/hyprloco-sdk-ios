@@ -5,7 +5,6 @@
 #import "HLAzureManager.h"
 #import "HLBluedotManager.h"
 #import "HLCommunicationsManager.h"
-#import "HLCustomer-Private.h"
 #import "HLCustomer.h"
 #import "HLDataManager.h"
 #import "HLLocation.h"

@@ -10,11 +10,21 @@
 #import "HyprLoco.h"
 #import "HLLogManager.h"
 
+@protocol HLBluedotManagerDelegate;
+
 @interface HLBluedotManager : NSObject
 
-@property (nonatomic, strong, nonnull) HLLogManager *logManager;
+- (instancetype)initWithDelegate:(id<HLBluedotManagerDelegate>)delegate logManager:(HLLogManager * _Nonnull)logManager NS_DESIGNATED_INITIALIZER;
 
 - (void)startUpdatingLocationWithTelemetricsURL:(NSString * _Nonnull)telemetricsURL telemetricsKey:(NSString * _Nonnull)telemetricsKey locationIdentifier:(NSString * _Nonnull)locationIdentifier sessionIdentifier:(NSString * _Nonnull)sessionIdentifier;
 - (void)stopUpdatingLocation;
+
+@end
+
+
+@protocol HLBluedotManagerDelegate <NSObject>
+
+@optional
+- (void)bluedotManager:(HLBluedotManager *)sender zoneDidChange:(NSString *)zoneName;
 
 @end

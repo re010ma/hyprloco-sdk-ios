@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'HyprLoco'
-  s.version          = '0.0.11'
+  s.version          = '0.2.0'
   s.summary          = 'Integrate HyprLoco NORM location services into your app.'
 
   s.description      = <<-DESC
