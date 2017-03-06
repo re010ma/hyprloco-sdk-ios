@@ -14,8 +14,7 @@
 
 @interface HLBluedotManager : NSObject
 
-- (instancetype)initWithDelegate:(id<HLBluedotManagerDelegate>)delegate logManager:(HLLogManager * _Nonnull)logManager NS_DESIGNATED_INITIALIZER;
-
+- (instancetype _Nullable)initWithDelegate:(id<HLBluedotManagerDelegate> _Nullable)delegate logManager:(HLLogManager * _Nonnull)logManager NS_DESIGNATED_INITIALIZER;
 - (void)startUpdatingLocationWithTelemetricsURL:(NSString * _Nonnull)telemetricsURL telemetricsKey:(NSString * _Nonnull)telemetricsKey locationIdentifier:(NSString * _Nonnull)locationIdentifier sessionIdentifier:(NSString * _Nonnull)sessionIdentifier;
 - (void)stopUpdatingLocation;
 
@@ -25,6 +24,6 @@
 @protocol HLBluedotManagerDelegate <NSObject>
 
 @optional
-- (void)bluedotManager:(HLBluedotManager *)sender zoneDidChange:(NSString *)zoneName;
+- (void)bluedotManager:(HLBluedotManager * _Nonnull)sender zoneDidChangeForPlace:(NSString * _Nonnull)place beaconIdentifier:(NSInteger)beaconIdentifier;
 
 @end

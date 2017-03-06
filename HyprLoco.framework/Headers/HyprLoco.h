@@ -82,7 +82,7 @@ typedef NS_ENUM(NSInteger, HLServer) {
 /**
  A delegate to be notified when location events occor.
  */
-@property (nonatomic, weak) id<HyprLocoDelegate> delegate;
+@property (nonatomic, weak) id<HyprLocoDelegate> _Nullable delegate;
 
 /**
  The OIS server to use.
@@ -202,6 +202,6 @@ typedef NS_ENUM(NSInteger, HLServer) {
 @protocol HyprLocoDelegate <NSObject>
 
 @optional
-- (void)hyprLoco:(HyprLoco *)sender zoneDidChange:(NSString *)zoneName;
+- (void)hyprLoco:(HyprLoco * _Nonnull)sender zoneDidChangeForPlace:(NSString * _Nonnull)place beaconIdentifier:(NSInteger)beaconIdentifier;
 
 @end
