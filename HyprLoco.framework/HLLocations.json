@@ -1,0 +1,34 @@
+[{
+ "locationId": "7f6aacabd2734d86875dc93778656c30",
+ "label": "West Odessa",
+ "line1": "2744 N County Rd W",
+ "city": "Odessa",
+ "state": "TX",
+ "zip": "79764",
+ "phone": "(432) 332-2117,,1",
+ "encph": "(432)%20332-2117%2C%2C1",
+ "latitude": 31.866774,
+ "longitude": -102.397087
+ }, {
+ "locationId": "250645dbe84a46fcb100121e6fe1a4ac",
+ "label": "Wadley",
+ "line1": "4415 Wadley Ave",
+ "city": "Midland",
+ "state": "TX",
+ "zip": "79707",
+ "phone": "(432) 694-1800,,1",
+ "encph": "(432)%20694-1800%2C1",
+ "latitude": 32.015115,
+ "longitude": -102.142595
+ }, {
+ "locationId": "d5a7071f775a4b4fb443ffb9129c9534",
+ "label": "East Odessa",
+ "line1": "6950 East Highway 191",
+ "city": "Odessa",
+ "state": "TX",
+ "zip": "79765",
+ "phone": "(432) 789-1110,,1",
+ "encph": "(432)%20789-1110%2C1",
+ "latitude": 31.906236,
+ "longitude": -102.300926
+ }]

@@ -1,0 +1,6 @@
+framework module HyprLoco {
+  umbrella header "HyprLoco-umbrella.h"
+
+  export *
+  module * { export * }
+}
