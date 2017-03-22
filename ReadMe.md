@@ -18,7 +18,7 @@ Please email any questions about the HyprLoco iOS SDK to [support@HyprLoco.com](
 Prerequisites
 ------------
 
-You will need a HyprLoco application key and a HyprLoco subscription key. If you don’t already have these keys, or can’t find them, contact your HyprLoco representative or [Contact Us](http://hyprloco.com/contactus/).
+You will need a HyprLoco application key and a HyprLoco subscription key. If you don’t already have these keys, or can’t find them, contact your HyprLoco representative or [Contact Us](http://hyprloco.com/contact/).
 
 The SDK supports iOS 8.0 and later. It compatible with apps written in Objective-C and all flavors of Swift.
 
@@ -43,4 +43,4 @@ Revision History
 
 ## Version 1.0dev
 
-Released January 2017 (hopefully).
+Released February 2017
